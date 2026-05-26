@@ -1,0 +1,25 @@
+# H2 Database Configuration for Production
+spring.datasource.url=jdbc:h2:file:./data/studentdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# JPA Configuration
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.format_sql=false
+
+# JWT Configuration
+app.jwt.secret=${JWT_SECRET:5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437}
+app.jwt.expiration.ms=86400000
+
+# Server
+server.port=${PORT:8080}
+
+# Logging
+logging.level.com.studentms=WARN
+logging.level.org.springframework.web=ERROR
+
+# Disable H2 console in production
+spring.h2.console.enabled=false
