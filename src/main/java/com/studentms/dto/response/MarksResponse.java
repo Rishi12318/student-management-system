@@ -1,9 +1,9 @@
 package com.studentms.dto.response;
 
 import com.studentms.model.ExamType;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -22,5 +22,4 @@ public class MarksResponse {
     private String grade;
     private LocalDate examDate;
     private String remarks;
-}
 }

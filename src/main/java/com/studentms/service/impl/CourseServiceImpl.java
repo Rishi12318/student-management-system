@@ -106,7 +106,7 @@ public class CourseServiceImpl implements CourseService {
                 .department(c.getDepartment())
                 .isActive(c.getIsActive())
                 .maxSeats(c.getMaxSeats())
-                .enrollmentCount(count)
+                .enrolledStudentsCount(count)
                 .createdAt(c.getCreatedAt())
                 .build();
     }

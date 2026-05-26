@@ -1,6 +1,7 @@
 package com.studentms.dto.response;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data

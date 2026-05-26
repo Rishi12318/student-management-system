@@ -1,7 +1,8 @@
 package com.studentms.dto.response;
 
 import com.studentms.model.EnrollmentStatus;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data

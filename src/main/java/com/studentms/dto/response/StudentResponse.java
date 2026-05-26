@@ -1,7 +1,8 @@
 package com.studentms.dto.response;
 
 import com.studentms.model.Gender;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

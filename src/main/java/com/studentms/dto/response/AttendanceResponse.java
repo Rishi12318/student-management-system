@@ -1,7 +1,8 @@
 package com.studentms.dto.response;
 
 import com.studentms.model.AttendanceStatus;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -19,6 +20,5 @@ public class AttendanceResponse {
     private String remarks;
     private String recordedBy;
     private LocalDateTime recordedAt;
-    private Double attendancePercentage;
     private Double attendancePercentage;
 }
