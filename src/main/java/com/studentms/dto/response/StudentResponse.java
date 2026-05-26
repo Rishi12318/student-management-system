@@ -7,8 +7,6 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class StudentResponse {
     private Long id;
     private String enrollmentNumber;
@@ -23,4 +21,5 @@ public class StudentResponse {
     private String username;
     private String email;
     private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }

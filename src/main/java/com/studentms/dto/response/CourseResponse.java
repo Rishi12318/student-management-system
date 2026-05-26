@@ -5,8 +5,6 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class CourseResponse {
     private Long id;
     private String courseCode;
@@ -17,6 +15,7 @@ public class CourseResponse {
     private String department;
     private Boolean isActive;
     private Integer maxSeats;
-    private Long enrollmentCount;
+    private Long enrolledStudentsCount;
     private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }

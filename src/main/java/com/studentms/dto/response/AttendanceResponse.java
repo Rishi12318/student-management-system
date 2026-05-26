@@ -7,13 +7,12 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class AttendanceResponse {
     private Long id;
     private Long studentId;
     private String studentName;
     private Long courseId;
+    private String courseCode;
     private String courseName;
     private LocalDate date;
     private AttendanceStatus status;
@@ -21,6 +20,5 @@ public class AttendanceResponse {
     private String recordedBy;
     private LocalDateTime recordedAt;
     private Double attendancePercentage;
-    private Long totalClasses;
-    private Long presentClasses;
+    private Double attendancePercentage;
 }

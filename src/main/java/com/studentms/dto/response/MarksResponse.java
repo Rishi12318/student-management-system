@@ -7,13 +7,13 @@ import java.time.LocalDateTime;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class MarksResponse {
     private Long id;
     private Long studentId;
     private String studentName;
+    private String enrollmentNumber;
     private Long courseId;
+    private String courseCode;
     private String courseName;
     private ExamType examType;
     private Double marksObtained;
@@ -22,5 +22,5 @@ public class MarksResponse {
     private String grade;
     private LocalDate examDate;
     private String remarks;
-    private LocalDateTime createdAt;
+}
 }
