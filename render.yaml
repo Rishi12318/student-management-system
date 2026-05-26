@@ -9,5 +9,5 @@
         value: prod
       - key: JAVA_OPTS
         value: -Xmx256m
-    healthCheckPath: /actuator/health
+    healthCheckPath: /health
     autoDeploy: true
