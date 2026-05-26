@@ -1,0 +1,14 @@
+apache-maven-3.9.5/
+target/
+.mvn/
+mvnw
+mvnw.cmd
+mvnw.ps1
+.git
+.gitignore
+node_modules/
+.idea/
+*.iml
+*.log
+*.zip
+project-source.zip
