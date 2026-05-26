@@ -1,0 +1,13 @@
+﻿services:
+  - type: web
+    name: student-management-system
+    runtime: image
+    repo: https://github.com/yourusername/student-management-system
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: JAVA_OPTS
+        value: -Xmx256m
+    healthCheckPath: /actuator/health
+    autoDeploy: true
